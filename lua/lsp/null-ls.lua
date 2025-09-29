@@ -1,14 +1,19 @@
--- lua/lsp/null-ls.lua
 local null_ls = require("null-ls")
 
 null_ls.setup({
   sources = {
+    -- Rust
     null_ls.builtins.diagnostics.clippy,   -- Rust linting
     null_ls.builtins.formatting.rustfmt,   -- Rust formatting
-    null_ls.builtins.diagnostics.eslint,   -- JS/TS linting
-    null_ls.builtins.formatting.prettier,  -- JS/TS formatting
+    
+    -- JS / TS / JSX / TSX
+    null_ls.builtins.diagnostics.eslint_d,   -- JS/TS linting
+    null_ls.builtins.formatting.prettier,
+
+    -- Python 
     null_ls.builtins.diagnostics.flake8,   -- Python linting
     null_ls.builtins.formatting.black,     -- Python formatting
+   
   },
   on_attach = function(client, bufnr)
     if client.supports_method("textDocument/formatting") then

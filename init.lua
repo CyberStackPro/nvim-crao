@@ -27,10 +27,12 @@ require("lsp.tsserver")
 require("lsp.rust")
 require("lsp.python")
 require("lsp.null-ls")
+require("core.cmp")
 
 -- Load UI configs
 require("ui.theme")
 require("ui.statusline")
+require("ui.alpha")
 
-print("Welcome to Neovim, Crao! 🚀")
+print("Welcome to Neovim, Crao!")
 
