@@ -1,14 +1,15 @@
+````markdown
 # 🧠 nvim-crao
 
-A modern, modular Neovim configuration powered by [lazy.nvim](https://github.com/folke/lazy.nvim). Built for developers who want a fast and elegant IDE-like setup with support for LSP, Rust, Python, JS/TS, and more.
+A modern, modular Neovim configuration powered by [lazy.nvim](https://github.com/folke/lazy.nvim).  
+Built for developers who want a fast and elegant IDE-like setup with support for LSP, Rust, Python, JS/TS, C, and more.
 
-![screenshot](./assets/screenshot.png) <!-- Optional -->
-
+![screenshot](./assets/screenshot.png) 
 ---
 
 ## ✨ Features
 
-- 🧠 LSP support (Rust, Python, TypeScript, etc.)
+- 🧠 Full LSP support (Rust, Python, TypeScript, C, etc.)
 - 🧱 Modular Lua structure
 - 🎨 Theming with Ayu / Gruvbox
 - 🔍 Telescope fuzzy finder
@@ -25,14 +26,15 @@ A modern, modular Neovim configuration powered by [lazy.nvim](https://github.com
 ├── lazy-lock.json
 └── lua
     ├── core
-    │   ├── keymaps.lua
-    │   ├── options.lua
-    │   └── plugins.lua
+    │   ├── keymaps.lua
+    │   ├── options.lua
+    │   └── plugins.lua
     ├── lsp
-    │   ├── null-ls.lua
-    │   ├── python.lua
-    │   ├── rust.lua
-    │   └── tsserver.lua
+    │   ├── c.lua
+    │   ├── null-ls.lua
+    │   ├── python.lua
+    │   ├── rust.lua
+    │   └── tsserver.lua
     └── ui
         ├── statusline.lua
         └── theme.lua
@@ -43,8 +45,9 @@ A modern, modular Neovim configuration powered by [lazy.nvim](https://github.com
 ## 🚀 Installation
 
 ```bash
-git clone https://github.com/your-username/nvim-crao ~/.config/nvim
-nvim
+git clone https://github.com/CyberStackPro/nvim-crao ~/.config/nvim
+cd ~/.config/nvim
+./install.sh
 ```
 
 Neovim will auto-install `lazy.nvim` and sync plugins on first launch.
@@ -62,22 +65,27 @@ Neovim will auto-install `lazy.nvim` and sync plugins on first launch.
 
 ## 🛠️ Customization
 
-Tweak your keymaps in `lua/core/keymaps.lua`, plugin list in `core/plugins.lua`, and LSP settings per language in `lua/lsp/`.
+Tweak your keymaps in `lua/core/keymaps.lua`,
+plugin list in `core/plugins.lua`,
+and language-specific LSP settings in `lua/lsp/`.
 
 ---
 
 ## 📸 Screenshots
 
-.......
+(Add your screenshots here for better showcase)
 
 ---
 
 ## 🧙 Author
 
-Made with love by [Crao](https://github.com/your-username)
+Made with love by [Crao](https://github.com/CyberStackPro)
 
 ---
 
 ## 📜 License
 
 MIT
+
+```
+

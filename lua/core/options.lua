@@ -10,7 +10,7 @@ opt.number = true
 -- Enable true colors
 opt.termguicolors = true
 
--- Better clipboard (system copy/paste)
+-- Clipboard
 opt.clipboard = "unnamedplus"
 
 -- Indentation
@@ -25,4 +25,13 @@ opt.smartcase = true
 
 -- Scrolling
 opt.scrolloff = 8
+
+-- Diagnostics
+vim.diagnostic.config({
+  virtual_text = true,
+  signs = true,
+  underline = true,
+  update_in_insert = false,
+  severity_sort = true,
+})
 

@@ -24,7 +24,7 @@ require("core.plugins")
 
 -- Load LSP configs
 require("lsp.tsserver")
-require("lsp.rust")
+--require("lsp.rust")
 require("lsp.python")
 require("lsp.null-ls")
 require("core.cmp")
