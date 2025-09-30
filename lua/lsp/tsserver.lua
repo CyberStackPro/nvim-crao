@@ -1,11 +1,11 @@
 -- =============================
 -- LSP - TypeScript/JavaScript setup
 -- =============================
-local lsp = vim.lsp
+local lspconfig = require("lspconfig")
 
-lsp.config.ts_ls.setup({
+lspconfig.ts_ls.setup({
   filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact" },
-  root_dir = vim.fs.dirname(vim.fs.find({ "package.json", "tsconfig.json", ".git" }, { upward = true })[1]),
+  root_dir = lspconfig.util.root_pattern("package.json", "tsconfig.json", ".git"),
   single_file_support = true,
 })
 
